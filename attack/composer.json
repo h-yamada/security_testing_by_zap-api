@@ -1,0 +1,5 @@
+{
+	"require": {
+		"zaproxy/php-owasp-zap-v2": "2.4.*@beta"
+	}
+}

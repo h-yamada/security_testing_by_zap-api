@@ -1,0 +1,39 @@
+#テスト用脆弱性サイト
+testsite:
+  container_name: testsite
+  build: ./testsite
+  ports:
+    - 8080:8080
+  links:
+    - php7fpm
+
+php7fpm:
+  container_name: php7fpm
+  build: ./php7fpm
+
+#OWASP ZAP
+zap2:
+  container_name: zap2
+  image: owasp/zap2docker-stable
+  user: zap
+  ports:
+    - 8090:8090
+  entrypoint:
+   - zap-x.sh
+   - -daemon
+   - -host 0.0.0.0
+   - -port 8090
+   - -config api.disablekey=true
+  links:
+    - testsite
+
+faraday:
+  container_name: faraday
+  image: infobyte/faraday
+
+#active scan to testsite via zap
+attack:
+  container_name: attack
+  build: ./attack
+  links:
+    - zap2

@@ -1,0 +1,66 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "163c8fb2f0a4371152c965ccae711482",
+    "content-hash": "24314659d624b23e9fe08550e8c0bc23",
+    "packages": [
+        {
+            "name": "zaproxy/php-owasp-zap-v2",
+            "version": "2.4.3-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yukisov/php-owasp-zap-v2.git",
+                "reference": "d19509d4cadc869e938aaa7d50dfd87b0bd7201d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yukisov/php-owasp-zap-v2/zipball/d19509d4cadc869e938aaa7d50dfd87b0bd7201d",
+                "reference": "d19509d4cadc869e938aaa7d50dfd87b0bd7201d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master@dev",
+                "phpunit/phpunit": "4.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Zap\\": "src/Zap/",
+                    "Zap\\Test\\": "test/src/Zap/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "ZAP development team",
+                    "email": "yukisov@gmail.com",
+                    "homepage": "https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project"
+                }
+            ],
+            "description": "PHP client API for OWASP ZAP",
+            "keywords": [
+                "ZAP"
+            ],
+            "time": "2016-05-27 01:52:15"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "zaproxy/php-owasp-zap-v2": 10
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

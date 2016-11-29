@@ -1,0 +1,4 @@
+faraday:
+  container_name: faraday
+  build: .
+  command: /root/run.sh
