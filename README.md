@@ -38,11 +38,15 @@ security_testing_by_zap-api/
 
 # イメージ作成
 
+```
 docker-compose build
+```
 
 # コンテナ起動
 
+```
 docker-compose up -d
+```
 
 # Faraday起動
 
